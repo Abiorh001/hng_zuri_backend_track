@@ -14,8 +14,8 @@ class RetrieveApiEndpoint(APIView):
             "current_day": datetime.now().strftime('%A'),
             "utc_time": (datetime.utcnow() + timedelta(hours=1)).strftime('%Y-%m-%dT%H:%M:%SZ'),
             "track": track,
-            "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-            "github_repo_url": "https://github.com/Abiorh001/hng_zuri_backend_track.git",
+            "github_file_url": "https://github.com/Abiorh001/hng_zuri_backend_track/blob/main/zuri_endpoints/views.py",
+            "github_repo_url": "https://github.com/Abiorh001/hng_zuri_backend_track/tree/main",
             "status_code": 200
         }
         return Response(data)
