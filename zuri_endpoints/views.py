@@ -12,7 +12,7 @@ class RetrieveApiEndpoint(APIView):
         data = {
             "slack_name": slack_name,
             "current_day": datetime.now().strftime('%A'),
-            "utc_time": (datetime.utcnow() + timedelta(hours=1)).strftime('%Y-%m-%dT%H:%M:%SZ'),
+            "utc_time": (datetime.utcnow() + timedelta(hours=0)).strftime('%Y-%m-%dT%H:%M:%SZ'),
             "track": track,
             "github_file_url": "https://github.com/Abiorh001/hng_zuri_backend_track/blob/main/zuri_endpoints/views.py",
             "github_repo_url": "https://github.com/Abiorh001/hng_zuri_backend_track/tree/main",
