@@ -1,7 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from datetime import datetime, timedelta
-from rest_framework import status
 
 
 class RetrieveApiEndpoint(APIView):
